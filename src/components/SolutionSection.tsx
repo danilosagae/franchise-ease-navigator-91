@@ -15,32 +15,32 @@ const SolutionSection = () => {
     {
       icon: <UserCheck className="h-8 w-8 text-brand-blue" />,
       title: "Análise do seu perfil",
-      description: "Identificamos suas habilidades, interesses e objetivos para encontrar o melhor segmento."
+      description: "Analisamos seu perfil e capacidade de investimento para encontrar o melhor segmento."
     },
     {
       icon: <Calculator className="h-8 w-8 text-brand-blue" />,
-      title: "Análise da capacidade de investimento",
+      title: "Capacidade de investimento",
       description: "Avaliamos sua capacidade financeira para sugerir opções viáveis e sustentáveis."
     },
     {
       icon: <Map className="h-8 w-8 text-brand-blue" />,
-      title: "Avaliação do potencial da cidade",
-      description: "Analisamos o mercado local para identificar as melhores oportunidades na sua região."
+      title: "Avaliação da cidade",
+      description: "Avaliamos o potencial da cidade de interesse para identificar as melhores oportunidades."
     },
     {
       icon: <Award className="h-8 w-8 text-brand-blue" />,
-      title: "Escolha da melhor franquia",
-      description: "Recomendamos as franquias mais alinhadas ao seu perfil e objetivos."
+      title: "Escolha da franquia",
+      description: "Te ajudamos a escolher a melhor franquia para você, alinhada ao seu perfil."
     },
     {
       icon: <Building className="h-8 w-8 text-brand-blue" />,
-      title: "Avaliação de pontos comerciais",
-      description: "Analisamos localizações potenciais para maximizar o sucesso do seu negócio."
+      title: "Avaliação de pontos",
+      description: "Avaliamos pontos comerciais para maximizar o sucesso do seu negócio."
     },
     {
       icon: <ClipboardList className="h-8 w-8 text-brand-blue" />,
-      title: "Plano de negócios e financiamento",
-      description: "Estruturamos um plano detalhado e estratégias de financiamento para seu investimento."
+      title: "Plano de negócios",
+      description: "Elaboramos um plano de negócios completo com estratégias para seu investimento."
     }
   ];
 

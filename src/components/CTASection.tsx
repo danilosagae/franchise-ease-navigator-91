@@ -9,7 +9,7 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white mb-12">
           <h2 className="text-3xl font-bold mb-4">
-            Dê o primeiro passo para abrir o seu negócio com segurança
+            Supere o medo e comece sua jornada empreendedora com segurança agora
           </h2>
           <p className="text-lg">
             Agende uma consulta gratuita e descubra como podemos ajudar você a iniciar sua jornada empreendedora.
@@ -36,7 +36,7 @@ const CTASection = () => {
               className="w-full bg-brand-blue hover:bg-brand-blue/90"
               onClick={() => window.open('https://consultoriainvestiremfranquias.typeform.com/to/xxxx', '_blank')}
             >
-              Agendar Consulta
+              Descubra a franquia ideal para você
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>

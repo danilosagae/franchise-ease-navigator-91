@@ -12,7 +12,7 @@ const WhySection = () => {
             Por que abrir uma franquia?
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            Abrir uma franquia pode te trazer retorno financeiro, liberdade e a possibilidade de trabalhar no seu próprio negócio. Pode ser o início de uma jornada empreendedora de sucesso. Pode ser um momento divisor de águas na sua vida.
+            Abrir uma franquia pode ser o caminho para independência financeira e realização pessoal, mas o medo e a confusão podem travar seu sonho.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ const WhySection = () => {
                   <Coins className="h-8 w-8 text-brand-blue" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-center mb-2">Retorno Financeiro</h3>
+              <h3 className="text-xl font-semibold text-center mb-2">Independência Financeira</h3>
               <p className="text-gray-600 text-center">
                 Invista em um modelo de negócio comprovado com potencial de retorno consistente.
               </p>
@@ -38,7 +38,7 @@ const WhySection = () => {
                   <Lightbulb className="h-8 w-8 text-brand-purple" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-center mb-2">Liberdade</h3>
+              <h3 className="text-xl font-semibold text-center mb-2">Realização Pessoal</h3>
               <p className="text-gray-600 text-center">
                 Seja dono do seu próprio tempo com um negócio que tem processos bem definidos.
               </p>

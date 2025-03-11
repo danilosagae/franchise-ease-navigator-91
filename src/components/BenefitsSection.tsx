@@ -22,7 +22,7 @@ const BenefitsSection = () => {
               <div className="flex justify-center mb-4">
                 <Clock className="h-12 w-12 text-brand-green" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-2">Menor Tempo Dedicado</h3>
+              <h3 className="text-xl font-semibold text-center mb-2">Economize Tempo</h3>
               <p className="text-gray-600 text-center">
                 Economize tempo com nossa metodologia que agiliza o processo de avaliação e seleção de franquias.
               </p>
@@ -36,7 +36,7 @@ const BenefitsSection = () => {
               </div>
               <h3 className="text-xl font-semibold text-center mb-2">Reduza os Riscos</h3>
               <p className="text-gray-600 text-center">
-                Tome decisões mais seguras com base em análises profundas e avaliações criteriosas de cada oportunidade.
+                Reduza os riscos do investimento com base em análises profundas e avaliações criteriosas de cada oportunidade.
               </p>
             </CardContent>
           </Card>
@@ -46,9 +46,9 @@ const BenefitsSection = () => {
               <div className="flex justify-center mb-4">
                 <TrendingUp className="h-12 w-12 text-brand-blue" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-2">Maximize seu Retorno</h3>
+              <h3 className="text-xl font-semibold text-center mb-2">Maximize Seu Retorno</h3>
               <p className="text-gray-600 text-center">
-                Otimize seu investimento com estratégias financeiras personalizadas e planejamento de longo prazo.
+                Maximize seu retorno financeiro com estratégias personalizadas e planejamento de longo prazo.
               </p>
             </CardContent>
           </Card>

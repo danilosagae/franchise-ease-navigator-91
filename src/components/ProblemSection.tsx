@@ -17,10 +17,10 @@ const ProblemSection = () => {
           
           <div className="space-y-4 text-lg text-gray-700 mb-8">
             <p>
-              Mas como escolher a melhor franquia para o seu perfil? Como fazer uma avaliação financeira completa? Como ter segurança na escolha do ponto? Como saber os maiores riscos do negócio?
+              Quanto mais você pesquisa, mais dúvidas aparecem: e se eu escolher a franquia errada? E se o ponto não der certo? E se eu perder meu investimento?
             </p>
             <p>
-              Quanto mais você estuda, mais claras ficam as incertezas do negócio...
+              Não precisa ser tão sofrido assim.
             </p>
           </div>
           
