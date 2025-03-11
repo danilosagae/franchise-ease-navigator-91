@@ -1,64 +1,9 @@
 
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import { ArrowRight } from "lucide-react";
-import { 
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage
-} from "@/components/ui/form";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-
-const formSchema = z.object({
-  name: z.string().min(2, { message: "O nome é obrigatório" }),
-  email: z.string().email({ message: "Email inválido" }),
-  phone: z.string().min(8, { message: "Telefone inválido" }),
-  message: z.string().optional(),
-});
-
-type FormValues = z.infer<typeof formSchema>;
 
 const CTASection = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-  
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    },
-  });
-
-  const onSubmit = async (values: FormValues) => {
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    console.log("Form values:", values);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      
-      toast({
-        title: "Solicitação enviada com sucesso!",
-        description: "Entraremos em contato em breve.",
-      });
-      
-      form.reset();
-    }, 1500);
-  };
-
   return (
     <div className="py-16 hero-gradient" id="contato">
       <div className="container mx-auto px-4">
@@ -76,80 +21,52 @@ const CTASection = () => {
             Agende uma Consulta Gratuita
           </h3>
           
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Nome Completo</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Seu nome" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="seu@email.com" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Telefone</FormLabel>
-                    <FormControl>
-                      <Input placeholder="(00) 00000-0000" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Mensagem (opcional)</FormLabel>
-                    <FormControl>
-                      <Textarea 
-                        placeholder="Conte-nos um pouco sobre seu interesse em franquias..." 
-                        className="resize-none" 
-                        {...field} 
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              
-              <Button 
-                type="submit" 
-                className="w-full bg-brand-blue hover:bg-brand-blue/90"
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? "Enviando..." : "Agendar Consulta"}
-                {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
-              </Button>
-            </form>
-          </Form>
+          <div id="rd-form-container" className="w-full">
+            {/* RD Station Form will be loaded here */}
+            <div 
+              role="main" 
+              id="formulario-de-contato-c1b2cc6f598ead42c9c2"
+              className="w-full"
+            ></div>
+          </div>
+          
+          {/* Fallback button in case the form doesn't load */}
+          <div className="text-center mt-4" id="fallback-button" style={{ display: 'none' }}>
+            <Button 
+              className="w-full bg-brand-blue hover:bg-brand-blue/90"
+              onClick={() => window.open('https://consultoriainvestiremfranquias.typeform.com/to/xxxx', '_blank')}
+            >
+              Agendar Consulta
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </div>
         </div>
       </div>
+
+      {/* RD Station Form Script */}
+      <script 
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.onload = function() {
+              // Check if RD Station script is added to the page
+              var rdScript = document.createElement('script');
+              rdScript.type = 'text/javascript';
+              rdScript.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
+              rdScript.onload = function() {
+                if (typeof RDStationForms !== 'undefined') {
+                  new RDStationForms('formulario-de-contato-c1b2cc6f598ead42c9c2', 'UA-00000000-1').createForm();
+                } else {
+                  document.getElementById('fallback-button').style.display = 'block';
+                }
+              };
+              rdScript.onerror = function() {
+                document.getElementById('fallback-button').style.display = 'block';
+              };
+              document.body.appendChild(rdScript);
+            }
+          `
+        }}
+      />
     </div>
   );
 };
