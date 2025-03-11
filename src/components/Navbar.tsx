@@ -7,11 +7,16 @@ import { useState } from "react";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToContact = () => {
+    document.getElementById('contato')?.scrollIntoView({behavior: 'smooth'});
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-2xl font-bold text-brand-blue">InvestirEmFranquias</span>
+          <span className="text-xl md:text-2xl font-bold text-brand-blue">InvestirEmFranquias</span>
         </div>
 
         {/* Desktop Menu */}
@@ -26,7 +31,7 @@ const Navbar = () => {
             Depoimentos
           </a>
           <Button
-            href="#contato"
+            onClick={() => document.getElementById('contato')?.scrollIntoView({behavior: 'smooth'})}
             className="bg-brand-blue hover:bg-brand-blue/90 text-white"
           >
             Agende uma Consulta
@@ -68,9 +73,8 @@ const Navbar = () => {
               Depoimentos
             </a>
             <Button
-              href="#contato"
+              onClick={scrollToContact}
               className="bg-brand-blue hover:bg-brand-blue/90 text-white w-full"
-              onClick={() => setIsMenuOpen(false)}
             >
               Agende uma Consulta
             </Button>

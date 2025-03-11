@@ -105,3 +105,24 @@
 .benefit-card:hover {
   transform: translateY(-5px);
 }
+
+/* Added for better mobile display */
+@media (max-width: 640px) {
+  h1, h2 {
+    word-break: keep-all;
+    hyphens: manual;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Reduced section spacing in mobile */
+@media (max-width: 768px) {
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
