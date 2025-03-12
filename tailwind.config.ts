@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				serif: ['Cormorant Garamond', 'serif'],
+				sans: ['Nunito Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -64,7 +68,7 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#0EA5E9',
+					blue: '#2A3267',
 					darkblue: '#1A1F2C',
 					purple: '#8B5CF6',
 					green: '#10B981',

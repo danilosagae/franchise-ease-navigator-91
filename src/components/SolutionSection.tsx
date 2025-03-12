@@ -1,6 +1,5 @@
 
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button"; 
 import { 
   UserCheck, 
@@ -15,41 +14,41 @@ import {
 const SolutionSection = () => {
   const solutions = [
     {
-      icon: <UserCheck className="h-8 w-8 text-brand-blue" />,
+      icon: <UserCheck className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Análise do seu perfil",
-      description: "Analisamos seu perfil e capacidade de investimento para encontrar o melhor segmento."
+      description: "Analisamos seu perfil e capacidade para encontrar o melhor segmento."
     },
     {
-      icon: <Calculator className="h-8 w-8 text-brand-blue" />,
+      icon: <Calculator className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Capacidade de investimento",
-      description: "Avaliamos sua capacidade financeira para sugerir opções viáveis e sustentáveis."
+      description: "Avaliamos sua capacidade financeira para sugerir opções viáveis."
     },
     {
-      icon: <Map className="h-8 w-8 text-brand-blue" />,
+      icon: <Map className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Avaliação da cidade",
-      description: "Avaliamos o potencial da cidade de interesse para identificar as melhores oportunidades."
+      description: "Avaliamos o potencial da cidade para identificar oportunidades."
     },
     {
-      icon: <Award className="h-8 w-8 text-brand-blue" />,
+      icon: <Award className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Escolha da franquia",
-      description: "Te ajudamos a escolher a melhor franquia para você, alinhada ao seu perfil."
+      description: "Te ajudamos a escolher a melhor franquia alinhada ao seu perfil."
     },
     {
-      icon: <Building className="h-8 w-8 text-brand-blue" />,
+      icon: <Building className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Avaliação de pontos",
-      description: "Avaliamos pontos comerciais para maximizar o sucesso do seu negócio."
+      description: "Avaliamos pontos comerciais para maximizar o sucesso do negócio."
     },
     {
-      icon: <ClipboardList className="h-8 w-8 text-brand-blue" />,
+      icon: <ClipboardList className="h-6 w-6 text-[#8B5CF6]" />,
       title: "Plano de negócios",
-      description: "Elaboramos um plano de negócios completo com estratégias para seu investimento."
+      description: "Elaboramos um plano com estratégias para seu investimento."
     }
   ];
 
   return (
     <div className="py-10 md:py-12 bg-white" id="processo">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-10">
+        <div className="max-w-3xl mx-auto text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
             Nossa Solução
           </h2>
@@ -58,34 +57,34 @@ const SolutionSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
           {solutions.map((solution, index) => (
-            <Card key={index} className="shadow-md hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-brand-blue/10 rounded-full">
-                    {solution.icon}
-                  </div>
+            <div key={index} className="p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow border-l-2 border-[#8B5CF6]">
+              <div className="flex items-start">
+                <div className="p-2 rounded-full bg-[#8B5CF6]/10 mr-3">
+                  {solution.icon}
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold text-center mb-2">{solution.title}</h3>
-                <p className="text-sm md:text-base text-gray-600 text-center">
-                  {solution.description}
-                </p>
-              </CardContent>
-            </Card>
+                <div>
+                  <h3 className="text-base font-semibold mb-1">{solution.title}</h3>
+                  <p className="text-xs text-gray-600">
+                    {solution.description}
+                  </p>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
         
-        {/* New Call to Action */}
-        <div className="max-w-2xl mx-auto text-center bg-brand-blue/10 p-6 rounded-lg">
-          <h3 className="text-xl font-bold mb-3 text-gray-800">
+        {/* Call to Action */}
+        <div className="max-w-2xl mx-auto text-center bg-gradient-to-r from-[#2A3267] to-[#3F4E87] p-6 rounded-lg text-white shadow-lg">
+          <h3 className="text-xl font-bold mb-3">
             Pronto para começar sua jornada empreendedora?
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-white/90 mb-4 text-sm">
             Dê o primeiro passo para transformar seu sonho em um negócio de sucesso hoje mesmo.
           </p>
           <Button 
-            className="bg-brand-blue hover:bg-brand-blue/90 text-white px-6"
+            className="bg-white text-[#2A3267] hover:bg-gray-100 px-6"
             onClick={() => document.getElementById('contato')?.scrollIntoView({behavior: 'smooth'})}
           >
             Fale com um especialista

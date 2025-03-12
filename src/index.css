@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -91,11 +93,17 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
   }
 }
 
 .hero-gradient {
-  background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+  background: linear-gradient(135deg, #2A3267 0%, #3F4E87 100%);
 }
 
 .benefit-card {
@@ -104,6 +112,39 @@
 
 .benefit-card:hover {
   transform: translateY(-5px);
+}
+
+.highlight-box {
+  border-left: 4px solid #8B5CF6;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.highlight-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.bullet-card {
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.bullet-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: #8B5CF6;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.bullet-card:hover::before {
+  opacity: 1;
 }
 
 /* Added for better mobile display */
@@ -122,7 +163,16 @@
 /* Reduced section spacing in mobile */
 @media (max-width: 768px) {
   section {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .py-16 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .mb-12 {
+    margin-bottom: 1.5rem;
   }
 }
