@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-            Abrir sua primeira franquia é confuso e assustador? Nós te entendemos
+            Abrir sua primeira franquia é complexo e assustador? Nós te entendemos
           </h1>
           <p className="text-base md:text-lg mb-8 opacity-90">
             Te guiamos passo a passo para transformar seu sonho em um negócio seguro.

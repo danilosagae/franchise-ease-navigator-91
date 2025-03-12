@@ -29,7 +29,7 @@ const WhySection = () => {
             Por que abrir uma franquia?
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-            Abrir uma franquia pode ser o caminho para independência financeira e realização pessoal, mas o medo e a confusão podem travar seu sonho.
+            Abrir uma franquia pode ser o caminho para independência financeira e realização pessoal, mas o medo e a complexidade podem travar seu sonho.
           </p>
         </div>
 
