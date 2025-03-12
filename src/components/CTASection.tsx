@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -30,10 +29,11 @@ const CTASection = () => {
             ></div>
           </div>
           
-          {/* Fallback button in case the form doesn't load */}
+          {/* Fallback button */}
           <div className="text-center mt-4" id="fallback-button" style={{ display: 'none' }}>
             <Button 
-              className="w-full bg-brand-blue hover:bg-brand-blue/90"
+              size="default"
+              className="bg-brand-blue hover:bg-brand-blue/90 shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => window.open('https://consultoriainvestiremfranquias.typeform.com/to/xxxx', '_blank')}
             >
               Descubra a franquia ideal para você

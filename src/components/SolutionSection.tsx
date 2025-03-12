@@ -84,7 +84,7 @@ const SolutionSection = () => {
             Dê o primeiro passo para transformar seu sonho em um negócio de sucesso hoje mesmo.
           </p>
           <Button 
-            className="bg-white text-[#2A3267] hover:bg-gray-100 px-6"
+            className="bg-white text-[#2A3267] hover:bg-gray-100 px-6 shadow-[0_4px_14px_0_rgba(0,0,0,0.25)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.25)] transition-all duration-300"
             onClick={() => document.getElementById('contato')?.scrollIntoView({behavior: 'smooth'})}
           >
             Fale com um especialista
