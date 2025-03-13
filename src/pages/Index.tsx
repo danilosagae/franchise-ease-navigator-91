@@ -21,7 +21,9 @@ const Index = () => {
     
     return () => {
       // Clean up the script when the component unmounts
-      document.body.removeChild(script);
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
   
