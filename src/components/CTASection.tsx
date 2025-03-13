@@ -1,6 +1,8 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import RDStationForm from "./RDStationForm";
 
 const CTASection = () => {
   return (
@@ -21,12 +23,7 @@ const CTASection = () => {
           </h3>
           
           <div id="rd-form-container" className="w-full">
-            {/* RD Station Form will be loaded here */}
-            <div 
-              role="main" 
-              id="formulario-de-contato-c1b2cc6f598ead42c9c2"
-              className="w-full"
-            ></div>
+            <RDStationForm />
           </div>
           
           {/* Fallback button */}
@@ -42,31 +39,6 @@ const CTASection = () => {
           </div>
         </div>
       </div>
-
-      {/* RD Station Form Script */}
-      <script 
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.onload = function() {
-              // Check if RD Station script is added to the page
-              var rdScript = document.createElement('script');
-              rdScript.type = 'text/javascript';
-              rdScript.src = 'https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js';
-              rdScript.onload = function() {
-                if (typeof RDStationForms !== 'undefined') {
-                  new RDStationForms('formulario-de-contato-c1b2cc6f598ead42c9c2', 'UA-00000000-1').createForm();
-                } else {
-                  document.getElementById('fallback-button').style.display = 'block';
-                }
-              };
-              rdScript.onerror = function() {
-                document.getElementById('fallback-button').style.display = 'block';
-              };
-              document.body.appendChild(rdScript);
-            }
-          `
-        }}
-      />
     </div>
   );
 };
