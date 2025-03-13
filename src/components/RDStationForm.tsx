@@ -7,7 +7,8 @@ const RDStationForm = () => {
     script.src = "https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js";
     script.async = true;
     script.onload = () => {
-      new RDStationForms("formulario-de-contato-c1b2cc6f598ead42c9c2", "null").createForm();
+      // @ts-ignore - RDStationForms is loaded by the script
+      new window.RDStationForms("form-vulkan-cf41bc4b125fd34b40e7", "null").createForm();
     };
     document.body.appendChild(script);
 
@@ -22,7 +23,7 @@ const RDStationForm = () => {
     };
   }, []);
 
-  return <div role="main" id="formulario-de-contato-c1b2cc6f598ead42c9c2"></div>;
+  return <div role="main" id="form-vulkan-cf41bc4b125fd34b40e7"></div>;
 };
 
 export default RDStationForm;
