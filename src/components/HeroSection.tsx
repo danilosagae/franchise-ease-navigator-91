@@ -8,8 +8,10 @@ const HeroSection = () => {
     <div className="pt-24 md:pt-28 pb-10 hero-gradient">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center text-white">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight">
-            Abrir sua primeira franquia é complexo e assustador? Nós te entendemos
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            Abrir sua primeira franquia é complexo e assustador?
+            <br />
+            <span className="block mt-2">Nós te entendemos</span>
           </h1>
           <p className="text-base md:text-lg mb-8 opacity-90">
             Te guiamos passo a passo para transformar seu sonho em um negócio seguro.
