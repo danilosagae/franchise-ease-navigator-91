@@ -26,7 +26,7 @@ const ProblemSection = () => {
           
           <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg highlight-box transform transition-all duration-300 hover:scale-[1.02]">
             <p className="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
-              Existe uma forma menos dolorosa e mais segura para investir
+              Existe uma forma mais segura para investir
             </p>
             <p className="text-gray-700 text-base md:text-lg">
               Nossa consultoria especializada te ajuda a navegar com confiança, reduzindo riscos e maximizando suas chances de sucesso.
