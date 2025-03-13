@@ -65,8 +65,8 @@ const SolutionSection = () => {
                   {solution.icon}
                 </div>
                 <div>
-                  <h3 className="text-base font-semibold mb-1">{solution.title}</h3>
-                  <p className="text-xs text-gray-600">
+                  <h3 className="text-lg font-semibold mb-1">{solution.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 line-clamp-2">
                     {solution.description}
                   </p>
                 </div>

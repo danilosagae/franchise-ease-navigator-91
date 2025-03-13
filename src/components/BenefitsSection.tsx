@@ -17,37 +17,37 @@ const BenefitsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#10B981]">
-            <div className="flex justify-center mb-4">
-              <div className="p-3 bg-[#10B981]/10 rounded-full">
-                <Clock className="h-8 w-8 text-[#10B981]" />
+            <div className="flex items-center mb-3">
+              <div className="p-2 bg-[#10B981]/10 rounded-full mr-3">
+                <Clock className="h-6 w-6 text-[#10B981]" />
               </div>
+              <h3 className="text-lg font-semibold">Economize Tempo</h3>
             </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Economize Tempo</h3>
-            <p className="text-gray-600 text-center text-sm">
+            <p className="text-base text-gray-600 pl-11">
               Economize tempo com nossa metodologia que agiliza o processo de avaliação e seleção.
             </p>
           </div>
 
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#8B5CF6]">
-            <div className="flex justify-center mb-4">
-              <div className="p-3 bg-[#8B5CF6]/10 rounded-full">
-                <ShieldCheck className="h-8 w-8 text-[#8B5CF6]" />
+            <div className="flex items-center mb-3">
+              <div className="p-2 bg-[#8B5CF6]/10 rounded-full mr-3">
+                <ShieldCheck className="h-6 w-6 text-[#8B5CF6]" />
               </div>
+              <h3 className="text-lg font-semibold">Reduza os Riscos</h3>
             </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Reduza os Riscos</h3>
-            <p className="text-gray-600 text-center text-sm">
+            <p className="text-base text-gray-600 pl-11">
               Reduza os riscos do investimento com análises profundas e avaliações criteriosas.
             </p>
           </div>
 
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#2563EB]">
-            <div className="flex justify-center mb-4">
-              <div className="p-3 bg-[#2563EB]/10 rounded-full">
-                <TrendingUp className="h-8 w-8 text-[#2563EB]" />
+            <div className="flex items-center mb-3">
+              <div className="p-2 bg-[#2563EB]/10 rounded-full mr-3">
+                <TrendingUp className="h-6 w-6 text-[#2563EB]" />
               </div>
+              <h3 className="text-lg font-semibold">Maximize Seu Retorno</h3>
             </div>
-            <h3 className="text-xl font-semibold text-center mb-2">Maximize Seu Retorno</h3>
-            <p className="text-gray-600 text-center text-sm">
+            <p className="text-base text-gray-600 pl-11">
               Maximize seu retorno financeiro com estratégias personalizadas e planejamento.
             </p>
           </div>
