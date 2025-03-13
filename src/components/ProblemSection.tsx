@@ -20,13 +20,13 @@ const ProblemSection = () => {
               Quanto mais você pesquisa, mais dúvidas aparecem: e se eu escolher a franquia errada? E se o ponto não der certo? E se eu perder meu investimento?
             </p>
             <p>
-              Não precisa ser tão sofrido assim.
+              Não precisa ser tão doloroso assim.
             </p>
           </div>
           
           <div className="bg-white p-5 rounded-lg highlight-box">
             <p className="text-lg font-semibold text-gray-800 mb-2">
-              Existe uma forma menos sofrida e mais segura para investir
+              Existe uma forma menos dolorosa e mais segura para investir
             </p>
             <p className="text-gray-600 text-sm md:text-base">
               Nossa consultoria especializada te ajuda a navegar com confiança, reduzindo riscos e maximizando suas chances de sucesso.
