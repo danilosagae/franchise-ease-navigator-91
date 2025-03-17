@@ -12,8 +12,8 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/04d297e8-91b9-4d2b-9213-6405b424122f.png" 
                 alt="Investir em Franquia" 
-                className="h-[60px] invert"
-                style={{ height: '60px' }}
+                className="h-[120px] invert"
+                style={{ height: '120px' }}
               />
             </div>
             
