@@ -24,5 +24,14 @@ export default defineConfig(({ mode }) => ({
     outDir: "dist",
     emptyOutDir: true,
     sourcemap: false,
+    minify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@/components/ui']
+        }
+      }
+    }
   },
 }));
