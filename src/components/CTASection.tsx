@@ -13,7 +13,7 @@ const CTASection = () => {
             Supere o medo e comece sua jornada empreendedora com segurança agora
           </h2>
           <p className="text-lg">
-            Agende uma conversa gratuita e descubra como podemos ajudar você a iniciar sua jornada empreendedora.
+            Agende uma conversa gratuita e descubra como podemos ajudar você
           </p>
         </div>
 
