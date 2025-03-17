@@ -61,12 +61,12 @@ const SolutionSection = () => {
           {solutions.map((solution, index) => (
             <div key={index} className="p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow border-l-2 border-[#8B5CF6]">
               <div className="flex items-start">
-                <div className="p-2 rounded-full bg-[#8B5CF6]/10 mr-3">
+                <div className="p-2 rounded-full bg-[#8B5CF6]/10 mr-3 flex-shrink-0">
                   {solution.icon}
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">{solution.title}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 line-clamp-2">
+                  <p className="text-base line-clamp-2 text-gray-600">
                     {solution.description}
                   </p>
                 </div>

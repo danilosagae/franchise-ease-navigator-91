@@ -16,7 +16,11 @@ const Navbar = () => {
     <nav className="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-xl md:text-2xl font-bold text-brand-blue">InvestirEmFranquias</span>
+          <img 
+            src="/lovable-uploads/04d297e8-91b9-4d2b-9213-6405b424122f.png" 
+            alt="Investir em Franquia" 
+            className="h-10 md:h-12"
+          />
         </div>
 
         {/* Desktop Menu */}
@@ -34,7 +38,7 @@ const Navbar = () => {
             onClick={() => document.getElementById('contato')?.scrollIntoView({behavior: 'smooth'})}
             className="bg-brand-blue hover:bg-brand-blue/90 text-white"
           >
-            Agende uma Consulta
+            Agende uma Conversa
           </Button>
         </div>
 
@@ -76,7 +80,7 @@ const Navbar = () => {
               onClick={scrollToContact}
               className="bg-brand-blue hover:bg-brand-blue/90 text-white w-full"
             >
-              Agende uma Consulta
+              Agende uma Conversa
             </Button>
           </div>
         </div>

@@ -8,7 +8,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-            <div className="text-2xl font-bold mb-4 md:mb-0">InvestirEmFranquias</div>
+            <div className="mb-4 md:mb-0">
+              <img 
+                src="/lovable-uploads/04d297e8-91b9-4d2b-9213-6405b424122f.png" 
+                alt="Investir em Franquia" 
+                className="h-12 invert"
+              />
+            </div>
             
             <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
               <a 
@@ -20,28 +26,28 @@ const Footer = () => {
               </a>
               
               <a 
-                href="mailto:contato@investiremfranquias.com.br" 
+                href="mailto:contato@investiremfranquia.com.br" 
                 className="flex items-center hover:text-brand-blue transition-colors"
               >
                 <Mail className="h-5 w-5 mr-2" />
-                contato@investiremfranquias.com.br
+                contato@investiremfranquia.com.br
               </a>
               
               <a 
-                href="https://instagram.com/investiremfranquias" 
+                href="https://instagram.com/investiremfranquia" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center hover:text-brand-blue transition-colors"
               >
                 <Instagram className="h-5 w-5 mr-2" />
-                @investiremfranquias
+                @investiremfranquia
               </a>
             </div>
           </div>
           
           <div className="border-t border-gray-800 pt-8">
             <div className="text-center text-gray-400 text-sm">
-              <p>&copy; {new Date().getFullYear()} InvestirEmFranquias. Todos os direitos reservados.</p>
+              <p>&copy; {new Date().getFullYear()} Investir em Franquia. Todos os direitos reservados.</p>
             </div>
           </div>
         </div>

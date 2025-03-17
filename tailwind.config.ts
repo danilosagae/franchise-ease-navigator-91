@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -20,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				serif: ['Cormorant Garamond', 'serif'],
-				sans: ['Nunito Sans', 'sans-serif'],
+				serif: ['Montserrat', 'sans-serif'],
+				sans: ['Montserrat', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -73,7 +72,8 @@ export default {
 					purple: '#8B5CF6',
 					green: '#10B981',
 					orange: '#F97316',
-					yellow: '#FEF7CD'
+					yellow: '#FEF7CD',
+					teal: '#0EA5E9'
 				}
 			},
 			borderRadius: {

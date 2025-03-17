@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import WhySection from "@/components/WhySection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import BenefitsSection from "@/components/BenefitsSection";
@@ -31,7 +30,6 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <HeroSection />
-      <WhySection />
       <ProblemSection />
       <SolutionSection />
       <BenefitsSection />
