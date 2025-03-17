@@ -10,10 +10,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="mb-4 md:mb-0">
               <img 
-                src="/lovable-uploads/04d297e8-91b9-4d2b-9213-6405b424122f.png" 
+                src="/lovable-uploads/ba75612b-6eb5-48b0-b821-7203b1c5abd4.png" 
                 alt="Investir em Franquia" 
-                className="h-[120px] invert"
-                style={{ height: '120px' }}
+                className="h-16 brightness-0 invert"
               />
             </div>
             
