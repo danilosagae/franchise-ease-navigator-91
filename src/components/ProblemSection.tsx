@@ -1,21 +1,17 @@
 
 import React from "react";
-import { AlertTriangle, Lightbulb } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 
 const ProblemSection = () => {
   return (
     <div className="py-10 md:py-14 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
-          <div className="flex justify-center mb-6">
-            <AlertTriangle className="h-12 w-12 text-[#8B5CF6]" />
-          </div>
-          
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-800">
             Os desafios de escolher a franquia certa
           </h2>
           
-          <div className="space-y-4 text-lg md:text-xl text-gray-700 mb-8">
+          <div className="space-y-4 text-lg text-gray-700 mb-8">
             <p>
               Abrir uma franquia pode ser o caminho para independência financeira e realização pessoal, mas o medo e a complexidade podem travar seu sonho.
             </p>

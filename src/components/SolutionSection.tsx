@@ -50,7 +50,7 @@ const SolutionSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-            Nossa Solução
+            Nossas Soluções
           </h2>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed">
             Entendemos a sua realidade e simplificamos o processo. Avaliamos as oportunidades de investimento adaptadas ao seu perfil.
@@ -66,7 +66,7 @@ const SolutionSection = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold mb-1">{solution.title}</h3>
-                  <p className="text-base line-clamp-2 text-gray-600">
+                  <p className="text-base text-gray-600">
                     {solution.description}
                   </p>
                 </div>

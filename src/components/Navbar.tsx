@@ -14,12 +14,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white/95 backdrop-blur-sm fixed w-full z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
+        <div className="flex items-center h-16">
           <img 
             src="/lovable-uploads/04d297e8-91b9-4d2b-9213-6405b424122f.png" 
             alt="Investir em Franquia" 
-            className="h-10 md:h-12"
+            className="h-full"
           />
         </div>
 

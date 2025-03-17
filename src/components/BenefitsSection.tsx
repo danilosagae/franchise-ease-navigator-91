@@ -17,37 +17,43 @@ const BenefitsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#10B981]">
-            <div className="flex items-center mb-3">
+            <div className="flex items-start mb-3">
               <div className="p-2 bg-[#10B981]/10 rounded-full mr-3 flex-shrink-0">
                 <Clock className="h-6 w-6 text-[#10B981]" />
               </div>
-              <h3 className="text-lg font-semibold">Economize Tempo</h3>
+              <div>
+                <h3 className="text-lg font-semibold">Economize Tempo</h3>
+              </div>
             </div>
-            <p className="text-base text-gray-600 ml-2">
+            <p className="text-base text-gray-600">
               Economize tempo com nossa metodologia que agiliza o processo de avaliação e seleção.
             </p>
           </div>
 
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#8B5CF6]">
-            <div className="flex items-center mb-3">
+            <div className="flex items-start mb-3">
               <div className="p-2 bg-[#8B5CF6]/10 rounded-full mr-3 flex-shrink-0">
                 <ShieldCheck className="h-6 w-6 text-[#8B5CF6]" />
               </div>
-              <h3 className="text-lg font-semibold">Reduza os Riscos</h3>
+              <div>
+                <h3 className="text-lg font-semibold">Reduza os Riscos</h3>
+              </div>
             </div>
-            <p className="text-base text-gray-600 ml-2">
+            <p className="text-base text-gray-600">
               Reduza os riscos do investimento com análises profundas e avaliações criteriosas.
             </p>
           </div>
 
           <div className="benefit-card p-5 bg-white rounded-lg shadow-md border-t-2 border-[#2563EB]">
-            <div className="flex items-center mb-3">
+            <div className="flex items-start mb-3">
               <div className="p-2 bg-[#2563EB]/10 rounded-full mr-3 flex-shrink-0">
                 <TrendingUp className="h-6 w-6 text-[#2563EB]" />
               </div>
-              <h3 className="text-lg font-semibold">Maximize Seu Retorno</h3>
+              <div>
+                <h3 className="text-lg font-semibold">Maximize Seu Retorno</h3>
+              </div>
             </div>
-            <p className="text-base text-gray-600 ml-2">
+            <p className="text-base text-gray-600">
               Maximize seu retorno financeiro com estratégias personalizadas e planejamento.
             </p>
           </div>
